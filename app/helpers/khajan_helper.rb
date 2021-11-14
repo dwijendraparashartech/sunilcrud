@@ -1,0 +1,2 @@
+module KhajanHelper
+end

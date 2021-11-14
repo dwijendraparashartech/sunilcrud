@@ -1,0 +1,2 @@
+class KhajanController < ApplicationController
+end

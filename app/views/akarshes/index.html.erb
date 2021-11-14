@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Akarshes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @akarshes.each do |akarsh| %>
+      <tr>
+        <td><%= akarsh.title %></td>
+        <td><%= akarsh.description %></td>
+        <td><%= link_to 'Show', akarsh %></td>
+        <td><%= link_to 'Edit', edit_akarsh_path(akarsh) %></td>
+        <td><%= link_to 'Destroy', akarsh, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Akarsh', new_akarsh_path %>
